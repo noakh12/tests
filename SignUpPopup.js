@@ -207,7 +207,7 @@ const SignUpPopup = () => {
         </div>
         <div className="hoggo-right-side">
           <img src="images/hoggo-logo.png" alt="hoggo logo" className="hoggo-logo" />
-          <h1>Unlock 7 days of unlimited access - <br /> Sign up for free!</h1>
+          <h1>Unlock 7 days of unlimited access - Sign up for free!</h1>
           <p>No credit card required</p>
           <button className="hoggo-button hoggo-sign-up">Sign Up Now</button>
           <div className="hoggo-divider">OR</div>
