@@ -53,10 +53,10 @@ const styles = `
     background-color: rgba(230, 244, 241, 0.9);
     color: #1B4A56;
     margin: 15px 0;
-    padding: 16px 12px;
+    padding: 16px 18px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
   }
 
   .hoggo-feature-box:hover {
