@@ -1,0 +1,72 @@
+import React from 'react';
+
+const SignUpPopup = () => {
+  return (
+    <div className="flex h-screen font-['Poppins', sans-serif]">
+      {/* Left side with background image and overlay */}
+      <div className="relative w-1/2 bg-[#1B4A56]">
+        <img
+          src="/api/placeholder/600/800"
+          alt="passport"
+          className="w-full h-full object-cover opacity-10"
+        />
+        <div className="absolute inset-0 bg-[#1B4A56] opacity-90" />
+        <div className="absolute inset-0 p-8 text-white">
+          <h2 className="text-2xl font-bold mb-8">Section 1</h2>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="bg-[#E6F4F1] p-4 rounded-lg text-[#1B4A56]">
+              <h3 className="font-bold mb-2">Spot High Risk Vendors</h3>
+              <p className="text-sm">Assess your vendors, partners and suppliers with one-click with hoggo's AI-powered risk profiles.</p>
+            </div>
+            <div className="bg-[#E6F4F1] p-4 rounded-lg text-[#1B4A56]">
+              <h3 className="font-bold mb-2">The Power of The Network</h3>
+              <p className="text-sm">hoggo connects you directly to relevant buyers or sellers, making compliance sharing a breeze.</p>
+            </div>
+            <div className="bg-[#E6F4F1] p-4 rounded-lg text-[#1B4A56]">
+              <h3 className="font-bold mb-2">Automated Vendor Monitoring</h3>
+              <p className="text-sm">hoggo monitors your vendors so you can stay ahead of threats without lifting a finger.</p>
+            </div>
+            <div className="bg-[#E6F4F1] p-4 rounded-lg text-[#1B4A56]">
+              <h3 className="font-bold mb-2">Showcase Compliance</h3>
+              <p className="text-sm">Sell faster by eliminating compliance bottlenecks and demonstrating privacy & security compliance in minutes.</p>
+            </div>
+            <div className="bg-[#E6F4F1] p-4 rounded-lg text-[#1B4A56] col-span-2">
+              <h3 className="font-bold mb-2">Synced RoPA & Sub-processors</h3>
+              <p className="text-sm">hoggo takes sub-processors list, Records of Processing Activities (RoPA) and other requirements off your plate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Right side with sign-up form */}
+      <div className="w-1/2 p-8 flex flex-col justify-between">
+        <div>
+          <img
+            src="/api/placeholder/200/50"
+            alt="hoggo logo"
+            className="mb-8"
+          />
+          <h1 className="text-3xl font-bold mb-4">Unlock 7 days of unlimited access - Sign up now for free!</h1>
+          <p className="mb-8">No credit card required</p>
+          <button className="w-full bg-[#FACE6A] text-[#1B4A56] py-3 rounded-[20px] font-bold mb-4">
+            Sign Up Now
+          </button>
+          <div className="text-center mb-8">OR</div>
+          <button className="w-full border-2 border-[#1B4A56] text-[#1B4A56] py-3 rounded-[20px] font-bold">
+            Log in
+          </button>
+        </div>
+        <div className="text-sm text-gray-600 mt-8">
+          <p>Please read our 
+            <a href="https://hoggo.io/privacy-policy/" className="text-[#1B4A56]"> Privacy Policy </a> 
+            and 
+            <a href="https://hoggo.io/terms-and-conditions/" className="text-[#1B4A56]"> Terms and Conditions</a>. 
+            By accessing or using our services, you agree to our Terms of Services, and by signing-up you accept our Privacy Policy.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SignUpPopup;
