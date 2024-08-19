@@ -4,32 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoggo Sign Up</title>
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 <body>
     <div id="root">If you see this, React hasn't rendered anything yet.</div>
     <script type="text/babel" src="SignUpPopup.js"></script>
     <script type="text/babel">
-        try {
-            ReactDOM.render(
-                <React.StrictMode>
-                    <SignUpPopup />
-                </React.StrictMode>,
-                document.getElementById('root')
-            );
-        } catch (error) {
-            console.error('Error rendering React component:', error);
-            document.getElementById('root').innerHTML = 'An error occurred while loading the page. Please check the console for details.';
-        }
+        ReactDOM.render(
+            <React.StrictMode>
+                <SignUpPopup />
+            </React.StrictMode>,
+            document.getElementById('root')
+        );
     </script>
-    <script type="text/babel">
-  ReactDOM.render(
-    <h1>If you can see this, React is working!</h1>,
-    document.getElementById('test-react')
-  );
-</script>
-<div id="test-react"></div>
 </body>
 </html>
