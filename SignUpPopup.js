@@ -29,7 +29,7 @@ const styles = `
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.1;
+    opacity: 0.9;
     z-index: 0;
   }
 
