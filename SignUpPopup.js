@@ -29,7 +29,7 @@ const styles = `
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.9;
+    opacity: 90%;
     z-index: 0;
   }
 
@@ -217,7 +217,8 @@ const SignUpPopup = () => {
         </div>
         <div className="hoggo-right-side">
           <img src="images/hoggo-logo.png" alt="hoggo logo" className="hoggo-logo" />
-          <h1>Unlock 7 days of unlimited access - <br> Sign up for free!</h1>
+          <h1>Unlock 7 days of unlimited access - </h1> <br> 
+                <h1> Sign up for free! </h1>
           <p>No credit card required</p>
           <button className="hoggo-button hoggo-sign-up">Sign Up Now</button>
           <div className="hoggo-divider">OR</div>
