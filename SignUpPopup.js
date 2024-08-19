@@ -29,7 +29,7 @@ const styles = `
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
-    opacity: 90%;
+    opacity: 0.1;  // Changed from 90% to 0.1 for 10% opacity
     z-index: 0;
   }
 
@@ -38,6 +38,7 @@ const styles = `
     z-index: 1;
     max-height: 100%;
     overflow-y: auto;
+    padding-right: 10px;
   }
 
   .hoggo-right-side {
@@ -48,65 +49,56 @@ const styles = `
     justify-content: center;
   }
 
-.hoggo-feature-box {
-  background-color: rgba(230, 244, 241, 0.9);
-  color: #1B4A56;
-  margin: 15px 0;  /* Increased margin for better separation */
-  padding: 16px 12px;  /* Increased top and bottom padding */
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 0.3s ease;
-}
+  .hoggo-feature-box {
+    background-color: rgba(230, 244, 241, 0.9);
+    color: #1B4A56;
+    margin: 15px 0;
+    padding: 16px 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+  }
 
-.hoggo-feature-box:hover {
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-}
+  .hoggo-feature-box:hover {
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
 
-.hoggo-icon {
-  font-size: 20px;  /* Slightly increased icon size */
-  margin-right: 10px;
-  vertical-align: middle;
-}
+  .hoggo-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
 
-.hoggo-feature-box h3 {
-  font-size: 16px;
-  margin: 0 0 8px 0;  /* Added bottom margin to title */
-  display: inline-block;
-  vertical-align: middle;
-}
+  .hoggo-feature-box h3 {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
 
-.hoggo-feature-box p {
-  font-size: 14px;
-  margin: 0;
-  line-height: 1.4;  /* Improved line height for better readability */
-}
+  .hoggo-feature-box p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+  }
 
-.hoggo-feature-boxes {
-  position: relative;
-  z-index: 1;
-  max-height: 100%;
-  overflow-y: auto;
-  padding-right: 10px;  /* Added padding for scrollbar */
-}
+  .hoggo-feature-boxes::-webkit-scrollbar {
+    width: 6px;
+  }
 
-/* Styling the scrollbar for WebKit browsers */
-.hoggo-feature-boxes::-webkit-scrollbar {
-  width: 6px;
-}
+  .hoggo-feature-boxes::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
 
-.hoggo-feature-boxes::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-}
+  .hoggo-feature-boxes::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
 
-.hoggo-feature-boxes::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
-}
-
-.hoggo-feature-boxes::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
-}
+  .hoggo-feature-boxes::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
 
   .hoggo-button {
     display: block;
@@ -170,8 +162,6 @@ const styles = `
   }
 `;
 
-// The rest of the code remains the same...
-
 const FeatureBox = ({ icon, title, description }) => (
   <div className="hoggo-feature-box">
     <span className="hoggo-icon">{icon}</span>
@@ -217,8 +207,7 @@ const SignUpPopup = () => {
         </div>
         <div className="hoggo-right-side">
           <img src="images/hoggo-logo.png" alt="hoggo logo" className="hoggo-logo" />
-          <h1>Unlock 7 days of unlimited access - </h1> <br> 
-                <h1> Sign up for free! </h1>
+          <h1>Unlock 7 days of unlimited access - <br /> Sign up for free!</h1>
           <p>No credit card required</p>
           <button className="hoggo-button hoggo-sign-up">Sign Up Now</button>
           <div className="hoggo-divider">OR</div>
