@@ -146,13 +146,13 @@ const SignUpPopup = () => {
         </div>
         <div className="hoggo-right-side">
           <img src="images/hoggo-logo.png" alt="hoggo logo" className="hoggo-logo" />
-          <h1>Unlock 7 days of unlimited access - Sign up now for free!</h1>
+          <h1>Unlock 7 days of unlimited access - Sign up for free!</h1>
           <p>No credit card required</p>
           <button className="hoggo-button hoggo-sign-up">Sign Up Now</button>
           <div className="hoggo-divider">OR</div>
           <button className="hoggo-button hoggo-log-in">Log in</button>
           <p className="hoggo-terms">
-            Please read our <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a>. 
+            Please read our <a href="https://hoggo.io/privacy-policy">Privacy Policy</a> and <a href="https://hoggo.io/terms-and-conditions">Terms and Conditions</a>. 
             By accessing or using our services, you agree to our Terms of Services, and by signing-up 
             you accept our Privacy Policy.
           </p>
