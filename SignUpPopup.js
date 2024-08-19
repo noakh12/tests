@@ -49,6 +49,13 @@ const styles = `
     justify-content: center;
   }
 
+  .hoggo-right-side h1 {
+    color: #1B4A56;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
   .hoggo-feature-box {
     background-color: rgba(230, 244, 241, 0.9);
     color: #1B4A56;
