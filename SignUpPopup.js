@@ -11,10 +11,14 @@ const styles = `
   .hoggo-left-side {
     width: 50%;
     background-color: #1B4A56;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .hoggo-right-side {
@@ -26,15 +30,15 @@ const styles = `
   }
 
   .hoggo-feature-box {
-    background-color: #E6F4F1;
+    background-color: rgba(230, 244, 241, 0.9);
     color: #1B4A56;
     margin: 10px 0;
-    padding: 15px;
+    padding: 12px;
     border-radius: 10px;
   }
 
   .hoggo-icon {
-    font-size: 24px;
+    font-size: 20px;
     margin-right: 10px;
   }
 
@@ -114,7 +118,6 @@ const SignUpPopup = () => {
       <style>{styles}</style>
       <div className="hoggo-container">
         <div className="hoggo-left-side">
-          <h2>Section 1</h2>
           <FeatureBox
             icon="🔍"
             title="Spot High Risk Vendors"
@@ -142,7 +145,7 @@ const SignUpPopup = () => {
           />
         </div>
         <div className="hoggo-right-side">
-          <img src="/hoggo-logo.png" alt="hoggo logo" className="hoggo-logo" />
+          <img src="images/hoggo-logo.png" alt="hoggo logo" className="hoggo-logo" />
           <h1>Unlock 7 days of unlimited access - Sign up now for free!</h1>
           <p>No credit card required</p>
           <button className="hoggo-button hoggo-sign-up">Sign Up Now</button>
