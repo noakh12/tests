@@ -52,8 +52,14 @@ const styles = `
     background-color: rgba(230, 244, 241, 0.9);
     color: #1B4A56;
     margin: 10px 0;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .hoggo-feature-box:hover {
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   }
 
   .hoggo-icon {
@@ -133,6 +139,8 @@ const styles = `
   }
 `;
 
+// The rest of the code remains the same...
+
 const FeatureBox = ({ icon, title, description }) => (
   <div className="hoggo-feature-box">
     <span className="hoggo-icon">{icon}</span>
@@ -178,7 +186,7 @@ const SignUpPopup = () => {
         </div>
         <div className="hoggo-right-side">
           <img src="images/hoggo-logo.png" alt="hoggo logo" className="hoggo-logo" />
-          <h1>Unlock 7 days of unlimited access - Sign up for free!</h1>
+          <h1>Unlock 7 days of unlimited access - <br> Sign up for free!</h1>
           <p>No credit card required</p>
           <button className="hoggo-button hoggo-sign-up">Sign Up Now</button>
           <div className="hoggo-divider">OR</div>
