@@ -220,7 +220,7 @@ const SignUpPopup = () => {
           <div className="hoggo-divider">OR</div>
           <button className="hoggo-button hoggo-log-in">Log in</button>
           <p className="hoggo-terms">
-            Please read our <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a>. 
+            Please read our <a href="https://hoggo.io/privacy-policy/">Privacy Policy</a> and <a href="https://hoggo.io/terms-and-conditions/">Terms and Conditions</a>. 
             By accessing or using our services, you agree to our Terms of Services, and by signing-up 
             you accept our Privacy Policy.
           </p>
